@@ -1,7 +1,9 @@
 package com.Pluralsight.NorthwindTradersSpringBoot;
 
 import com.Pluralsight.NorthwindTradersSpringBoot.Models.Product;
-import org.springframework.boot.ApplicationContextFactory;
+import com.Pluralsight.NorthwindTradersSpringBoot.data.ProductDao;
+import com.Pluralsight.NorthwindTradersSpringBoot.data.SimpleProductDao;
+import com.Pluralsight.NorthwindTradersSpringBoot.userinterface.ConsoleHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

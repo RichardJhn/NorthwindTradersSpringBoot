@@ -1,4 +1,4 @@
-package com.Pluralsight.NorthwindTradersSpringBoot;
+package com.Pluralsight.NorthwindTradersSpringBoot.userinterface;
 
 import java.util.Scanner;
 
@@ -59,6 +59,13 @@ public class ConsoleHelper {
     public static float promptForFloat(String prompt){
         System.out.print(prompt + ": ");
         float result = scanner.nextFloat();
+        scanner.nextLine();
+        return result;
+    }
+
+    public static double promptForDouble(String prompt){
+        System.out.print(prompt + ": ");
+        double result = scanner.nextDouble();
         scanner.nextLine();
         return result;
     }

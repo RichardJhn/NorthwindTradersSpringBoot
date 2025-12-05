@@ -6,15 +6,15 @@ public class Product {
     private String category;
     private double price;
 
-    public Product{
+    public Product() {
         //do nothing
     }
 
-    public Product(double price, int productID, String name, String category) {
-        this.price = price;
+    public Product(double price, int productID, String category, String name) {
         this.productID = productID;
-        this.name = name;
+        this.price = price;
         this.category = category;
+        this.name = name;
     }
 
     public int getProductID() {
@@ -47,5 +47,13 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setProductId(int i) {
+    }
+
+    public int getProductId() {
+
+        return 0;
     }
 }
